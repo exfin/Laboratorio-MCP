@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "ventas_mcp": {
+      "command": "node",
+      "args": [
+        "******\\entrega_mcp\\mcp_node\\build\\index.js"
+      ],
+      "env": {
+        "PG_HOST": "localhost",
+        "PG_PORT": "5432",
+        "PG_DB": "ventas",
+        "PG_USER": "postgres",
+        "PG_PASSWORD": "***"
+      }
+    },
+
+    "pedidos_mcp": {
+      "command": "python",
+      "args": [
+        "******\\entrega_mcp\\mcp_python\\server.py"
+      ],
+      "env": {
+        "PG_HOST": "localhost",
+        "PG_PORT": "5432",
+        "PG_DB": "pedidos",
+        "PG_USER": "postgres",
+        "PG_PASSWORD": "***"
+      }
+    }
+
+
+  }
+}
